@@ -1,0 +1,220 @@
+.app {
+  min-height: 100vh;
+}
+
+/* ------------------------------
+   Header
+------------------------------ */
+
+.tts-header {
+  padding: 80px 20px;
+  background: #dff1ff;
+  border-bottom: 1px solid #c8e6f8;
+}
+
+.tts-header h1 {
+  color: #123b5d;
+}
+
+.tts-header p {
+  color: #42677f;
+}
+
+.header-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: #2186b8;
+  border-radius: 50%;
+  font-size: 30px;
+  box-shadow: 0 8px 25px rgba(33, 134, 184, 0.12);
+}
+
+
+/* ------------------------------
+   General Sections
+------------------------------ */
+
+.text-input-card,
+.selector-card,
+.audio-card {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.section-icon {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: #e8f6ff;
+  color: #2186b8;
+  font-size: 20px;
+}
+
+
+/* ------------------------------
+   Text Input
+------------------------------ */
+
+.text-area {
+  min-height: 250px;
+  resize: vertical;
+  border: 1px solid #d5e6ef;
+  border-radius: 12px;
+  line-height: 1.7;
+  padding: 18px;
+}
+
+.text-area:focus {
+  border-color: #74b9dc;
+  box-shadow: 0 0 0 0.2rem rgba(33, 134, 184, 0.12);
+}
+
+.input-information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.count-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  background: #f0f8fc;
+  color: #42677f;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.character-limit {
+  color: #718692;
+  font-size: 14px;
+}
+
+
+/* ------------------------------
+   Selectors
+------------------------------ */
+
+.selector-card {
+  min-height: 250px;
+}
+
+.form-select {
+  border-color: #d5e6ef;
+  border-radius: 10px;
+}
+
+.form-select:focus {
+  border-color: #74b9dc;
+  box-shadow: 0 0 0 0.2rem rgba(33, 134, 184, 0.12);
+}
+
+
+/* ------------------------------
+   Action Buttons
+------------------------------ */
+
+.action-section {
+  padding: 10px 0;
+}
+
+.generate-btn {
+  background: #2186b8;
+  color: #ffffff;
+  border: 1px solid #2186b8;
+}
+
+.generate-btn:hover {
+  background: #176f9c;
+  color: #ffffff;
+}
+
+
+/* ------------------------------
+   Audio Section
+------------------------------ */
+
+.audio-card {
+  min-height: 380px;
+}
+
+.audio-placeholder {
+  padding: 50px 20px;
+  border: 2px dashed #cfe6f1;
+  border-radius: 15px;
+  background: #f8fcfe;
+}
+
+.audio-placeholder-icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #e8f6ff;
+  color: #2186b8;
+  font-size: 28px;
+}
+
+.audio-placeholder audio {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+/* ------------------------------
+   Footer
+------------------------------ */
+
+.tts-footer {
+  margin-top: 70px;
+  padding: 30px 20px;
+  background: #eaf7ff;
+  color: #42677f;
+  border-top: 1px solid #d4ebf6;
+}
+
+
+/* ------------------------------
+   Responsive Design
+------------------------------ */
+
+@media (max-width: 767px) {
+
+  .tts-header {
+    padding: 60px 20px;
+  }
+
+  .tts-header h1 {
+    font-size: 2.3rem;
+  }
+
+  .input-information {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .text-area {
+    min-height: 220px;
+  }
+
+}
