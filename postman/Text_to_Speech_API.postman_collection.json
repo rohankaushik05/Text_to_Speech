@@ -1,0 +1,102 @@
+{
+  "info": {
+    "_postman_id": "27deb8a0-0088-4a8f-b357-8ed00b2105b1",
+    "name": "Text_to_Speech_API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "49637735"
+  },
+  "item": [
+    {
+      "name": "Endpoint",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://text-to-speech-4yuo.onrender.com/",
+          "protocol": "https",
+          "host": [
+            "text-to-speech-4yuo",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://text-to-speech-4yuo.onrender.com/api/health",
+          "protocol": "https",
+          "host": [
+            "text-to-speech-4yuo",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "health"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Generate Speech",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"text\": \"Hello, welcome to my Text-to-Speech application.\",\r\n  \"language\": \"en-IN\",\r\n  \"voice\": \"en-IN-female\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://text-to-speech-4yuo.onrender.com/api/tts",
+          "protocol": "https",
+          "host": [
+            "text-to-speech-4yuo",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "tts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Voices",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://text-to-speech-4yuo.onrender.com/api/voices",
+          "protocol": "https",
+          "host": [
+            "text-to-speech-4yuo",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "voices"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
